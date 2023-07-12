@@ -1,5 +1,9 @@
 # Nuxt 3 Minimal Starter
 
+自作サイトを作成してみる。
+
+https://pr-nuxt-code-polaris044.vercel.app/
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
