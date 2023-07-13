@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     ],
   },
   css: ["@fortawesome/fontawesome-svg-core/styles.css"],
-  plugins: ["@/plugins/fontawesome.ts"],
+  plugins: ["@/plugins/fontawesome.js"],
   app: {
     head: {
       charset: "utf-8",

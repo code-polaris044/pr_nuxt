@@ -2,8 +2,8 @@
 
 //variable
 // header 
-$h-pc-h: 90px;
-$h-tab-h: 60px;
+$h-pc-h: 70px;
+$h-tab-h: 50px;
 
 // content width
 $pc-m: 1400px;
@@ -21,7 +21,15 @@ $about-contents-width-pc: min(100% - 80px, 720px);
 $contact-contents-width-pc: min(100% - 80px, 720px);
 $front-contents-width-pc: min(100% - 80px, 840px);
 
+// color
+$c-text: #333;
+$c-assort:hsl(155, 100%, 43%);
+$c-white: hsl(0, 0%, 100%);
+$c-accent:#004d2d;
+$c-link: #DB1200;
+
 // mixin 
+
 @mixin pc-m {
     @media screen and (max-width: ($pc-m)) {
         @content;
@@ -45,6 +53,17 @@ $front-contents-width-pc: min(100% - 80px, 840px);
         @content;
     }
 }
+
+// font-size
+$fs-normal: clamp(1.4rem, 1vw + 1rem, 1.6rem);
+$fs-c-18: clamp(1.6rem, 1vw + 1rem, 1.8rem);
+$fs-c-20: clamp(1.6rem, 1vw + 1rem, 2.0rem);
+$fs-c-24: clamp(1.8rem, 1vw + 1rem, 2.4rem);
+$fs-c-28: clamp(1.8rem, 1vw + 1rem, 2.8rem);
+$fs-c-32:clamp(1.8rem, 2vw + 1rem, 3.2rem);
+$fs-c-36:clamp(2.4rem, 2vw + 1rem, 3.6rem);
+$fs-c-48: clamp(2.4rem, 3vw + 1rem, 4.8rem);
+$fs-c-64: clamp(3.2rem, 3vw + 1rem, 6.4rem);
 
 
 // reset

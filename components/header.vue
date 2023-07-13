@@ -1,18 +1,14 @@
+<script setup lang="js"></script>
+
 <template>
   <header class="header">
     <div class="header__wrap">
       <h1 class="header__title">S. Sugawara Profile</h1>
       <nav class="nav">
-        <NuxtLink to="/">
+        <NuxtLink to="/" class="nav__link">
           <font-awesome-icon :icon="['fas', 'house']" />
         </NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink
-          to="https://github.com/code-polaris044/pr_nuxt"
-          target="_blank"
-        >
-          Github
-        </NuxtLink>
+        <NuxtLink to="/about" class="nav__link">About</NuxtLink>
       </nav>
     </div>
     <slot />
@@ -21,26 +17,45 @@
 
 <style lang="scss" scoped>
 .header {
-  background-color: hsl(155, 100%, 43%);
+  width: 100%;
+  background-color: $c-assort;
+  position: fixed;
+  z-index: 1;
 }
 .header__wrap {
   width: $common-contents-width-pc;
   justify-content: space-between;
   margin: 0 auto;
-  color: #db005b;
+  color: $c-accent;
   display: flex;
   height: $h-pc-h;
   align-items: center;
+  font-weight: 600;
+
+  @include tab {
+    width: $common-contents-width-tab;
+  }
 
   .header__title {
-    font-size: ;
+    font-size: $fs-c-28;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
   }
 }
 
-.fa-github-square {
-  font-size: 20px;
-  color: black;
+.nav {
+  display: flex;
+  gap: 30px;
+  .nav__link {
+    color: $c-text;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $c-link;
+    }
+  }
+  .router-link-active {
+    color: $c-accent;
+  }
 }
 </style>
-
-<script setup lang="ts"></script>
