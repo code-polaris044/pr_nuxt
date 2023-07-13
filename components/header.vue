@@ -1,5 +1,5 @@
 <template>
-  <div class="test">
+  <div class="header">
     <nav>
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/about">About</NuxtLink>
@@ -8,4 +8,11 @@
     <slot />
   </div>
 </template>
-<style lang="scss" scoped></style>
+
+<style>
+.header {
+  background-color: blue;
+  color: aliceblue;
+  display: flex;
+}
+</style>
