@@ -11,8 +11,10 @@
             <li class="list__item">2007年:鼻骨を骨折</li>
             <li class="list__item">2013年:青果店でアルバイト</li>
             <li class="list__item">2015年:小樽商科大学に入学</li>
-            <li class="list__item">2019年:大学卒業</li>
-            <li class="list__item">2019年:製糖メーカーに就職(人事)</li>
+            <li class="list__item">2017年:憲法ゼミ所属</li>
+            <li class="list__item">
+              2019年:大学卒業後、製糖メーカーに就職(人事)
+            </li>
             <li class="list__item">2022年:4月からWEB関連の仕事に従事</li>
           </ul>
         </div>
@@ -107,7 +109,7 @@
   font-size: $fs-c-32;
   letter-spacing: 0.1em;
   font-weight: 600;
-  color: $c-assort;
+  color: $c-white;
 }
 
 .skill__title {
@@ -116,7 +118,7 @@
   font-size: $fs-c-32;
   letter-spacing: 0.1em;
   font-weight: 600;
-  color: $c-assort;
+  color: $c-white;
 }
 .index__mainWrap {
   width: $common-contents-width-pc;

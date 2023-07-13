@@ -80,7 +80,7 @@
   font-size: $fs-c-32;
   letter-spacing: 0.1em;
   font-weight: 600;
-  color: $c-assort;
+  color: $c-white;
 }
 
 .curry__wrap {
