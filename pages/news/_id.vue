@@ -1,4 +1,10 @@
-<!-- <template>
-  <h2>id</h2>
-  <p>これは{{ $route.params.id }}です。</p>
-</template> -->
+<template>
+  <h1>プレイヤー {{ playerId }} 動的なルーティング</h1>
+</template>
+<script>
+export default {
+  data() {
+    return { playerId: this.$route.params.id };
+  },
+};
+</script>

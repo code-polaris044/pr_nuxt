@@ -7,7 +7,6 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
       title: "My App",
       meta: [{ name: "description", content: "pr site" }],
-      script: [{ src: "https://unpkg.com/scrollreveal" }],
     },
   },
   vite: {
