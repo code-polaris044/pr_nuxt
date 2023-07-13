@@ -8,7 +8,7 @@
         <NuxtLink to="/" class="nav__link">
           <font-awesome-icon :icon="['fas', 'house']" />
         </NuxtLink>
-        <NuxtLink to="/about" class="nav__link">About</NuxtLink>
+        <NuxtLink to="/curry" class="nav__link">Curry</NuxtLink>
       </nav>
     </div>
     <slot />

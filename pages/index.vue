@@ -141,6 +141,10 @@
     height: auto;
     aspect-ratio: 3/2;
     object-fit: cover;
+
+    @include tab {
+      margin: 0 auto;
+    }
   }
 }
 
