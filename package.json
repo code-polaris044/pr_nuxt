@@ -16,7 +16,11 @@
     "@nuxtjs/style-resources": "^1.2.1",
     "@types/node": "^18.16.19",
     "nuxt": "^3.6.2",
+    "particles.vue3": "^2.10.1",
     "sass": "^1.63.6",
     "sass-loader": "^10.4.1"
+  },
+  "dependencies": {
+    "vue3-particles": "^2.10.1"
   }
 }

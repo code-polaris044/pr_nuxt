@@ -19,6 +19,11 @@ export default defineNuxtConfig({
       bodyAttrs: {
         class: "body__class",
       },
+      script: [
+        {
+          src: "https://vincentgarreau.com/particles.js/",
+        },
+      ],
     },
   },
   vite: {
