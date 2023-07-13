@@ -18,9 +18,15 @@
 <style lang="scss" scoped>
 .header {
   width: 100%;
-  background-color: $c-assort;
   position: fixed;
   z-index: 1;
+  background-color: rgba($c-assort, 0.1); /* 背景色 */
+  border: 1px solid rgba($c-assort, 0.4); /* ボーダー */
+  border-right-color: rgba($c-assort, 0.2);
+  border-bottom-color: rgba($c-assort, 0.2);
+  -webkit-backdrop-filter: blur(20px); /* ぼかしエフェクト */
+  backdrop-filter: blur(20px);
+  box-shadow: 0 5px 20px rgba($c-assort, 0.5); /* 薄い影 */
 }
 .header__wrap {
   width: $common-contents-width-pc;
