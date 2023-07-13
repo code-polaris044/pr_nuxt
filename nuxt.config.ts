@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      title: "My App",
+      title: "S.Sugawara Profile",
       meta: [{ name: "description", content: "pr site" }],
       bodyAttrs: {
         class: "body__class",
