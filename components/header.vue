@@ -43,7 +43,7 @@
   }
 
   .header__title {
-    font-size: $fs-c-28;
+    font-size: $fs-c-32;
     line-height: 1.6;
     letter-spacing: 0.1em;
   }
