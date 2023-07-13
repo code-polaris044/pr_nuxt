@@ -42,7 +42,7 @@
           <figure class="skill__item__inner">
             <img src="~/assets/img/js.jpg" alt="js" class="skill__img" />
             <figcaption>
-              <h4>javascript(ライブラリ含む)</h4>
+              <h4>javascript(ライブラリ)</h4>
               <p>
                 Webサイトでは基本的な動きをJavaScriptやライブラリーでつけることができます。
               </p>
@@ -73,12 +73,29 @@
           <figure class="skill__item__inner">
             <img src="~/assets/img/curry.jpg" alt="curry" class="skill__img" />
             <figcaption>
-              <h4>git/github</h4>
+              <h4>ネパールカレー</h4>
               <p>大学生のころからネパールカレーを食べ歩いています。</p>
             </figcaption>
           </figure>
         </li>
       </ul>
+    </div>
+  </section>
+  <section class="past">
+    <div class="past__wrap">
+      <h2 class="skill__title">Past</h2>
+      <div class="index__mainWrap">
+        <img src="~/assets/img/otaru.jpg" alt="men" class="index__img" />
+        <div class="teaxtarea">
+          <h3 class="index__name">梁川通り</h3>
+          <div class="career">
+            <p class="career__title">市場に住むプロジェクトに参加。</p>
+            <p class="career__title">
+              市場の食品で生活チャレンジしていました。
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -106,6 +123,12 @@
   margin: 0 auto 100px;
   display: flex;
   gap: 40px;
+
+  @include tab {
+    width: $common-contents-width-tab;
+    flex-direction: column;
+    text-align: center;
+  }
 
   .index__name {
     font-size: $fs-c-24;
@@ -135,6 +158,10 @@
   width: $common-contents-width-pc;
   margin: 0 auto 100px;
 
+  @include tab {
+    width: $common-contents-width-tab;
+  }
+
   .skill__list {
     display: flex;
     flex-wrap: wrap;
@@ -143,6 +170,24 @@
 
     .skill__item {
       width: 30%;
+
+      @include tab {
+        width: 40%;
+      }
+
+      @include sp {
+        width: 80%;
+      }
+    }
+  }
+}
+
+.skill__item__inner {
+  figcaption {
+    h4 {
+      font-size: $fs-c-20;
+      font-weight: 400;
+      margin-bottom: 20px;
     }
   }
 }
@@ -152,5 +197,6 @@
   height: auto;
   aspect-ratio: 3/2;
   object-fit: cover;
+  margin-bottom: 30px;
 }
 </style>
