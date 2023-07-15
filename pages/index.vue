@@ -16,6 +16,7 @@
               2019年:大学卒業後、製糖メーカーに就職(人事)
             </li>
             <li class="list__item">2022年:4月からWEB関連の仕事に従事</li>
+            <li class="list__item">2022年:12月からwordpress開発に従事</li>
           </ul>
         </div>
       </div>
